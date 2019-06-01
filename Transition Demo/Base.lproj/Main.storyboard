@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Transition_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfz-9q-v0s">
+                                <rect key="frame" x="20" y="398" width="374" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6P1-MM-5ae">
+                                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="1Hc-gS-FwC"/>
+                                            <constraint firstAttribute="width" constant="80" id="Tdd-J9-OIW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <state key="normal" title="( - )">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterMinusButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3KR-km-1VS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQq-KL-jcR">
+                                        <rect key="frame" x="100" y="10" width="174" height="80"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55o-uy-InP">
+                                        <rect key="frame" x="284" y="10" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="AQS-tJ-EGX"/>
+                                            <constraint firstAttribute="height" constant="80" id="YZI-EJ-1cO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <state key="normal" title="( + )">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="counterPlusButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvZ-yh-m5o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.094791837039999993" green="0.60991877319999999" blue="0.099086962639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="55o-uy-InP" secondAttribute="trailing" constant="10" id="KGq-zF-hGQ"/>
+                                    <constraint firstItem="55o-uy-InP" firstAttribute="centerY" secondItem="Tfz-9q-v0s" secondAttribute="centerY" id="Lsf-Wi-uNC"/>
+                                    <constraint firstAttribute="height" constant="100" id="MMl-kQ-D6L"/>
+                                    <constraint firstItem="55o-uy-InP" firstAttribute="leading" secondItem="HQq-KL-jcR" secondAttribute="trailing" constant="10" id="SJ3-dp-KBQ"/>
+                                    <constraint firstItem="6P1-MM-5ae" firstAttribute="centerY" secondItem="Tfz-9q-v0s" secondAttribute="centerY" id="XR0-ME-HeF"/>
+                                    <constraint firstItem="HQq-KL-jcR" firstAttribute="leading" secondItem="6P1-MM-5ae" secondAttribute="trailing" constant="10" id="dg5-BI-kfc"/>
+                                    <constraint firstItem="HQq-KL-jcR" firstAttribute="top" secondItem="Tfz-9q-v0s" secondAttribute="top" constant="10" id="fai-Bj-vz4"/>
+                                    <constraint firstAttribute="bottom" secondItem="HQq-KL-jcR" secondAttribute="bottom" constant="10" id="fvH-cO-kMt"/>
+                                    <constraint firstItem="6P1-MM-5ae" firstAttribute="leading" secondItem="Tfz-9q-v0s" secondAttribute="leading" constant="10" id="sHO-2l-YUW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Tfz-9q-v0s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Xw-z5-pPN"/>
+                            <constraint firstItem="Tfz-9q-v0s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bYf-3R-XZh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tfz-9q-v0s" secondAttribute="trailing" constant="20" id="mdg-61-5La"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="HQq-KL-jcR" id="74r-4x-afi"/>
+                        <outlet property="counterMinusButton" destination="6P1-MM-5ae" id="KMz-6U-vKL"/>
+                        <outlet property="counterPlusButton" destination="55o-uy-InP" id="ESd-BT-KZn"/>
+                        <outlet property="counterView" destination="Tfz-9q-v0s" id="fvh-pi-e1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
